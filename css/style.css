@@ -58,8 +58,10 @@ body {
     margin-top: 10px;
     font-size: 21px;
     display: flex;
+    font-weight: 700;
     justify-items: center;
     gap: 10px;
+    font-family: "Inter", sans-serif;
     justify-content: center;
 }
 
