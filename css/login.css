@@ -1,0 +1,269 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+section.login, section.info {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+section.login {
+    background-color: #f9f9f9;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.login h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section.login p {
+    color: #525252;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+/* 
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+ */
+
+
+ form{
+    margin-top: 15px;
+ }
+ .input-group {
+    width: 364px;
+    display: flex;
+    align-items: center;
+    background: #F0EDFFCC;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    flex: 1;
+    color: #333;
+}
+.login-btn {
+    width: 124px;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 8px 21px 0px #00000029;
+}
+
+.login-others {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-with-lines {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.text-with-lines span {
+    flex: 1;
+    height: 20px;
+    background-color: transparent;
+    border-top: 1px solid #F0EDFF;
+    line-height: 60px;
+}
+
+.text-with-lines > p {
+    padding: 0;
+    margin: 0;
+    line-height: 10px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+.login-others p {
+    margin-bottom: 10px;
+}
+
+.social-login{
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-login, .facebook-login {
+    width: 364px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #F0EDFF;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+section.info {
+    background: linear-gradient(217.64deg, #9181F4 -5.84%, #5038ED 106.73%);
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+section.info::after{
+    content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.06;
+  background-image: url('../images/login-shade.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.info-content {
+    width: 412px;
+    height: 524px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #FFFFFF85;
+    padding: 15px;
+    border-radius: 46px;
+}
+
+.info-content .image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.info-content .image img{
+    position: relative;
+    transform: translate(1.5, 1.5);
+    bottom: -8px;
+    right: 279px;
+    width: 195%;
+}
+
+.info-content .light{
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    bottom: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-content .light  img{
+    width: 42px;
+    height: 42px;
+}
+
+.info-content .text{
+    width: 50%;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.info-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.info-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
