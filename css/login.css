@@ -49,27 +49,6 @@ section.login p {
     font-weight: 400;
     margin-bottom: 20px;
 }
-/* 
-.input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.input-group label img {
-    width: 24px;
-    margin-right: 10px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
- */
-
 
  form{
     margin-top: 15px;
@@ -261,9 +240,3 @@ section.info::after{
     width: 100%;
     border-radius: 10px;
 }
-
-
-
-
-
-
